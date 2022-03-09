@@ -8,4 +8,9 @@ class Solver
     end
     num * factorial(num - 1)
   end
+
+  def reverse(str)
+    str.reverse
+  end
+
 end
