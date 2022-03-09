@@ -14,9 +14,8 @@ describe Solver do
     end
 
     it 'should be able to raise an exception when a negative value is passed as a parameter' do
-      expect {@solver.factorial(-1)}.to raise_error("Can't calculate the factorial of a negative number")
+      expect { @solver.factorial(-1) }.to raise_error("Can't calculate the factorial of a negative number")
     end
-    
   end
 
   describe 'calling reverse method' do
@@ -24,7 +23,6 @@ describe Solver do
       expect(@solver.reverse('hello')).to eq('olleh')
       expect(@solver.reverse('eardrummers')).to eq('sremmurdrae')
     end
-    
   end
 
   describe 'calling fizzbuzz method' do
@@ -44,7 +42,5 @@ describe Solver do
       expect(@solver.fizzbuzz(7)).to eq(7)
       expect(@solver.fizzbuzz(98)).to eq(98)
     end
-    
   end
-
 end

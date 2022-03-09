@@ -1,11 +1,8 @@
 class Solver
   def factorial(num)
-    if(num == 0 || num == 1)
-      return 1
-    end
-    if(num < 0)
-      raise Exception.new "Can't calculate the factorial of a negative number"
-    end
+    return 1 if [0, 1].include?(num)
+    raise Exception, "Can't calculate the factorial of a negative number" if num.negative?
+
     num * factorial(num - 1)
   end
 
@@ -14,11 +11,11 @@ class Solver
   end
 
   def fizzbuzz(num)
-    if(num % 3 == 0 && num % 5 == 0)
+    if (num % 3).zero? && (num % 5).zero?
       'fizzbuzz'
-    elsif num % 3 ==0
+    elsif (num % 3).zero?
       'fizz'
-    elsif num % 5 ==0
+    elsif (num % 5).zero?
       'buzz'
     else
       num
