@@ -1,7 +1,9 @@
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# School Library
+# TDD Project
+
+> You can try developing a class using TDD
 
 ## Built With
 
@@ -16,14 +18,10 @@ To get a local copy up and running follow these simple example steps.
 
 2- In the drop down menu choose "Download Zip" or clone it using git using the following command.
 ~~~bash
-$ git clone git@github.com:Lucas-Masaba/OOP_school_library.git
+$ git clone git@github.com:ShadyShawkat/TDD-Project.git
 ~~~
 3- After extracting the files, you'll have my project on your local machine.
 
-4- to run the project you'll need to use the following command in your terminal.
-~~~bash
-$ ruby main.rb
-~~~
 
 ## Tests
 
@@ -31,7 +29,7 @@ To run the tests, you need to follow these simple steps:
 
 1- Navigate to the project directory using the following command.
 ~~~bash
-$ cd OOP_SCHOOL_LIBRARY
+$ cd TDD-Project
 ~~~
 2- Install Rspec gem using the following command.
 ~~~bash
