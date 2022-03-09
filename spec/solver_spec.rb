@@ -27,4 +27,24 @@ describe Solver do
     
   end
 
+  describe 'calling fizzbuzz method' do
+    it 'should be able to return fizzbuzz if the number is divisible by 3 and 5' do
+      expect(@solver.fizzbuzz(15)).to eq('fizzbuzz')
+      expect(@solver.fizzbuzz(60)).to eq('fizzbuzz')
+    end
+    it 'should be able to return fizz if the number is divisible by 3 only' do
+      expect(@solver.fizzbuzz(9)).to eq('fizz')
+      expect(@solver.fizzbuzz(18)).to eq('fizz')
+    end
+    it 'should be able to return buzz if the number is divisible by 5 only' do
+      expect(@solver.fizzbuzz(25)).to eq('buzz')
+      expect(@solver.fizzbuzz(100)).to eq('buzz')
+    end
+    it 'should be able to return the number if the number is neither divisible by 5 nor 3' do
+      expect(@solver.fizzbuzz(7)).to eq(7)
+      expect(@solver.fizzbuzz(98)).to eq(98)
+    end
+    
+  end
+
 end
